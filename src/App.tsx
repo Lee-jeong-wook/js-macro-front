@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components';
 import './App.css';
+import { NaverLogin } from './components/NaverLogin';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledContainer>
+      <NaverLogin />
+    </StyledContainer>
   );
 }
+
+const StyledContainer = styled.div`
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 export default App;
